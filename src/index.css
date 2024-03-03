@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active{
+ @apply font-semibold border-b-2 border-yellow-400 text-yellow-400 
+}
+.input-primary{
+    @apply px-3 py-2 text-sm border border-indigo-500 rounded-md focus:outline-2 focus:outline-indigo-500
+}
