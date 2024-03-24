@@ -5,9 +5,9 @@ import product2 from "../assets/product-2.jpg";
 import product3 from "../assets/product-3.jpg";
 
 const products = [
-  // {id:1,name:"Pen & Key Chain Mini-Kit",price:"",image:product1},
-  { id: 2, name: "New Joinee Kit", price: "", image: product2 },
-  { id: 3, name: "New Joinee Kit with Speakers", price: "", image: product3 },
+  { id: 1, name: "New Joinee Kit", price: "", image: product1 },
+  { id: 2, name: "Unique New Joinee Kit", price: "", image: product2 },
+  { id: 3, name: "New Arrival Compact Gift set", price: "", image: product3 },
 ];
 
 const FeaturedProducts = () => {
@@ -25,7 +25,7 @@ const FeaturedProducts = () => {
             initial={{ scale: 0, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             key={product.id}
-            className=" w-[220px] rounded shadow border overflow-hidden">
+            className=" w-[260px] rounded shadow border overflow-hidden">
             <div className="">
               <img
                 src={product.image}

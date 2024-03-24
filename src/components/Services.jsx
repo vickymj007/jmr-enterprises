@@ -3,18 +3,13 @@ import { motion } from "framer-motion";
 import { TfiGift } from "react-icons/tfi";
 import { MdKitchen } from "react-icons/md";
 import { IoMdPrint } from "react-icons/io";
-import { PiBagSimpleLight, PiNotePencilFill } from "react-icons/pi";
-import { SlNotebook } from "react-icons/sl";
-import { FaRegCalendarAlt } from "react-icons/fa";
+import { PiBagSimpleLight } from "react-icons/pi";
 
 const services = [
   { id: 1, title: "Corporate Gifts", icon: <TfiGift /> },
-  { id: 2, title: "Joining Kit", icon: <MdKitchen /> },
+  { id: 2, title: "New Joinee Kit", icon: <MdKitchen /> },
   { id: 3, title: "All types of Customized printing", icon: <IoMdPrint /> },
-  { id: 4, title: "All types of Bags", icon: <PiBagSimpleLight /> },
-  { id: 5, title: "Customized Diary", icon: <SlNotebook /> },
-  { id: 6, title: "Customized Calendar", icon: <FaRegCalendarAlt /> },
-  { id: 7, title: "Customized Note Pad", icon: <PiNotePencilFill /> },
+  { id: 4, title: "Bags Manufacturing", icon: <PiBagSimpleLight /> },
 ];
 
 const Services = () => {
@@ -25,7 +20,7 @@ const Services = () => {
       transition={{ delay: 0.2 }}
       className="mt-20 bg-black p-3 rounded-md">
       <p className="text-xl text-white mb-4 text-center">Services</p>
-      <div className="flex flex-wrap gap-2 justify-center text-xs mb-3">
+      <div className="flex flex-col gap-2 justify-center text-xs mb-3 desktop:flex-row desktop:flex-wrap">
         {services.map((service) => (
           <motion.p
             initial={{ opacity: 0, y: "50px" }}

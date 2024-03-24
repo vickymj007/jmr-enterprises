@@ -1,11 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
-import SocialLinks from "./SocialLinks"
+import SocialLinks from "./SocialLinks";
 
 const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
+
   return (
     <motion.form
       initial={{ opacity: 0 }}
@@ -61,10 +62,10 @@ const ContactForm = () => {
         Submit
       </motion.button>
       <motion.span
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 1.5 }}>
-        <SocialLinks/>
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5 }}>
+        <SocialLinks />
       </motion.span>
     </motion.form>
   );
